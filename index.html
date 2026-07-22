@@ -16,14 +16,16 @@
 <body>
 
 
-<nav>
+<header>
+
+<nav class="navbar">
 
 <div class="logo">
-Augustine
+Augustine<span>.</span>
 </div>
 
 
-<ul id="menu">
+<ul class="nav-links" id="navLinks">
 
 <li><a href="#home">Home</a></li>
 <li><a href="#about">About</a></li>
@@ -34,22 +36,22 @@ Augustine
 </ul>
 
 
-<button id="theme">
-🌙
-</button>
-
-
-<div class="hamburger" onclick="toggleMenu()">
+<div class="menu-btn" id="menuBtn">
 ☰
 </div>
 
 
 </nav>
 
+</header>
 
 
 
-<section id="home" class="hero">
+
+<section class="hero" id="home">
+
+
+<div class="hero-content">
 
 
 <h1>
@@ -58,19 +60,32 @@ Augustine Kapelabulungu
 
 
 <h2>
-I am a <span id="typing"></span>
+IT Support Technician
 </h2>
 
 
 <p>
-IT Support Technician passionate about Networking,
-Cloud Computing, Cybersecurity and Technology Solutions.
+Building solutions through technology, networking,
+software support and continuous learning.
 </p>
 
 
-<a class="btn" href="#contact">
+<div class="buttons">
+
+<a href="#projects" class="btn">
+View Projects
+</a>
+
+
+<a href="#contact" class="btn outline">
 Contact Me
 </a>
+
+
+</div>
+
+
+</div>
 
 
 </section>
@@ -84,19 +99,20 @@ Contact Me
 <h2>About Me</h2>
 
 
-<div class="card">
+<div class="container">
+
 
 <p>
 
-I am an IT Support Technician from Zambia with practical
-experience in hardware troubleshooting, software support,
-networking, printer systems, CCTV, access control systems
-and web development.
+I am an IT Support Technician from Zambia with experience
+in hardware troubleshooting, networking, printer systems,
+CCTV, access control systems and web development.
 
-I am currently developing my skills in cloud computing,
-cybersecurity and system administration.
+I am passionate about cloud computing, cybersecurity and
+building reliable technology solutions.
 
 </p>
+
 
 </div>
 
@@ -108,49 +124,63 @@ cybersecurity and system administration.
 
 <section id="skills">
 
+
 <h2>Technical Skills</h2>
 
 
-<div class="grid">
+<div class="cards container">
 
 
 <div class="card">
+
 <h3>IT Support</h3>
+
 <p>
-Windows, Hardware Troubleshooting,
-Software Installation, Microsoft 365
+Windows, Hardware Repair, Software Installation,
+Microsoft 365
 </p>
+
 </div>
 
 
 
 <div class="card">
+
 <h3>Networking</h3>
+
 <p>
 TCP/IP, LAN Setup, Router Configuration,
 Network Troubleshooting
 </p>
+
 </div>
 
 
 
 <div class="card">
-<h3>Development</h3>
+
+<h3>Web Development</h3>
+
 <p>
-HTML, CSS, JavaScript,
-PHP, MySQL, CodeIgniter
+HTML, CSS, JavaScript, PHP,
+MySQL, CodeIgniter
 </p>
+
 </div>
 
 
 
 <div class="card">
+
 <h3>Security Systems</h3>
+
 <p>
-CCTV, Access Control Systems,
+CCTV Installation, Access Control,
 Technical Support
 </p>
+
 </div>
+
 
 
 </div>
@@ -162,9 +192,14 @@ Technical Support
 
 
 
+
 <section id="projects">
 
+
 <h2>Projects</h2>
+
+
+<div class="cards container">
 
 
 <div class="card">
@@ -174,29 +209,35 @@ Technical Support
 <p>
 
 Agricultural e-commerce platform developed using
-PHP, CodeIgniter, MySQL, HTML, CSS and JavaScript.
+PHP, CodeIgniter, MySQL and JavaScript.
 
 </p>
 
 </div>
+
 
 
 
 <div class="card">
 
-<h3>IT Support Documentation</h3>
+<h3>IT Support Projects</h3>
 
 <p>
 
-Technical guides covering computer troubleshooting,
-printer installation and network support.
+Computer troubleshooting, printer installation,
+network configuration and system support.
 
 </p>
 
 </div>
 
 
+
+</div>
+
+
 </section>
+
 
 
 
@@ -208,13 +249,13 @@ printer installation and network support.
 <h2>Contact</h2>
 
 
-<div class="card">
+<div class="container contact">
 
 
 <p>
 GitHub:
-<a href="https://github.com/augustine-kapelabulungu">
-github.com/augustine-kapelabulungu
+<a href="#">
+Augustine Kapelabulungu
 </a>
 </p>
 
@@ -233,6 +274,7 @@ LinkedIn: Coming Soon
 
 
 
+
 <footer>
 
 <p>
@@ -240,6 +282,7 @@ LinkedIn: Coming Soon
 </p>
 
 </footer>
+
 
 
 
