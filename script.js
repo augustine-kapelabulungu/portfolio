@@ -1,98 +1,24 @@
-// Mobile Menu
+const menuBtn = document.getElementById("menuBtn");
 
-function toggleMenu(){
-
-let menu=document.getElementById("menu");
-
-menu.classList.toggle("show");
-
-}
+const navLinks = document.getElementById("navLinks");
 
 
+menuBtn.addEventListener("click",()=>{
 
-// Typing Effect
+navLinks.classList.toggle("active");
 
-let words=[
-
-"IT Support Technician",
-
-"Network Enthusiast",
-
-"Web Developer",
-
-"Future Cloud Engineer"
-
-];
-
-
-let index=0;
-
-let char=0;
-
-let typing=document.getElementById("typing");
-
-
-function type(){
-
-if(char < words[index].length){
-
-typing.innerHTML += words[index].charAt(char);
-
-char++;
-
-setTimeout(type,100);
-
-}
-
-else{
-
-setTimeout(erase,1500);
-
-}
-
-}
+});
 
 
 
-function erase(){
+// Close menu after clicking link
 
-if(char>0){
+document.querySelectorAll(".nav-links a").forEach(link=>{
 
-typing.innerHTML=words[index].substring(0,char-1);
+link.addEventListener("click",()=>{
 
-char--;
+navLinks.classList.remove("active");
 
-setTimeout(erase,50);
+});
 
-}
-
-else{
-
-index++;
-
-if(index>=words.length){
-
-index=0;
-
-}
-
-setTimeout(type,500);
-
-}
-
-}
-
-
-
-type();
-
-
-
-
-// Dark Mode
-
-document.getElementById("theme").onclick=function(){
-
-document.body.classList.toggle("dark");
-
-};
+});
