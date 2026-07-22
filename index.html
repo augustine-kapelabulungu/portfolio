@@ -2,40 +2,100 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Augustine Kapelabulungu | IT Support Technician</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css">
+<title>Augustine Kapelabulungu | IT Professional</title>
+
+<link rel="stylesheet" href="style.css">
+
 </head>
 
 
 <body>
 
-<header>
-    <h1>Augustine Kapelabulungu</h1>
 
-    <h2>IT Support Technician | Computer Science Student</h2>
+<nav>
 
-    <p>
-        Technology enthusiast passionate about IT Support,
-        Networking, Cloud Computing and Cybersecurity.
-    </p>
-</header>
+<div class="logo">
+Augustine
+</div>
 
 
-<section>
+<ul id="menu">
+
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+
+<button id="theme">
+🌙
+</button>
+
+
+<div class="hamburger" onclick="toggleMenu()">
+☰
+</div>
+
+
+</nav>
+
+
+
+
+<section id="home" class="hero">
+
+
+<h1>
+Augustine Kapelabulungu
+</h1>
+
+
+<h2>
+I am a <span id="typing"></span>
+</h2>
+
+
+<p>
+IT Support Technician passionate about Networking,
+Cloud Computing, Cybersecurity and Technology Solutions.
+</p>
+
+
+<a class="btn" href="#contact">
+Contact Me
+</a>
+
+
+</section>
+
+
+
+
+
+<section id="about">
 
 <h2>About Me</h2>
+
 
 <div class="card">
 
 <p>
-I am an IT Support Technician from Zambia with experience in
-computer hardware troubleshooting, software installation,
-networking, printer systems, CCTV, access control systems,
-and web technologies.
+
+I am an IT Support Technician from Zambia with practical
+experience in hardware troubleshooting, software support,
+networking, printer systems, CCTV, access control systems
+and web development.
+
+I am currently developing my skills in cloud computing,
+cybersecurity and system administration.
+
 </p>
 
 </div>
@@ -44,40 +104,65 @@ and web technologies.
 
 
 
-<section>
+
+
+<section id="skills">
 
 <h2>Technical Skills</h2>
 
+
+<div class="grid">
+
+
 <div class="card">
+<h3>IT Support</h3>
+<p>
+Windows, Hardware Troubleshooting,
+Software Installation, Microsoft 365
+</p>
+</div>
 
-<ul>
 
-<li>Windows Administration</li>
 
-<li>Computer Hardware Troubleshooting</li>
+<div class="card">
+<h3>Networking</h3>
+<p>
+TCP/IP, LAN Setup, Router Configuration,
+Network Troubleshooting
+</p>
+</div>
 
-<li>Networking</li>
 
-<li>Microsoft 365</li>
 
-<li>HTML & CSS</li>
+<div class="card">
+<h3>Development</h3>
+<p>
+HTML, CSS, JavaScript,
+PHP, MySQL, CodeIgniter
+</p>
+</div>
 
-<li>PHP & MySQL</li>
 
-<li>WordPress</li>
 
-<li>CCTV & Access Control Systems</li>
+<div class="card">
+<h3>Security Systems</h3>
+<p>
+CCTV, Access Control Systems,
+Technical Support
+</p>
+</div>
 
-</ul>
 
 </div>
+
 
 </section>
 
 
 
 
-<section>
+
+<section id="projects">
 
 <h2>Projects</h2>
 
@@ -87,20 +172,25 @@ and web technologies.
 <h3>AgriNova Hub</h3>
 
 <p>
-An agricultural e-commerce platform developed using
+
+Agricultural e-commerce platform developed using
 PHP, CodeIgniter, MySQL, HTML, CSS and JavaScript.
+
 </p>
 
 </div>
 
 
+
 <div class="card">
 
-<h3>IT Support Solutions</h3>
+<h3>IT Support Documentation</h3>
 
 <p>
-Practical troubleshooting projects involving hardware,
-software, printers and networking systems.
+
+Technical guides covering computer troubleshooting,
+printer installation and network support.
+
 </p>
 
 </div>
@@ -111,43 +201,34 @@ software, printers and networking systems.
 
 
 
-<section>
 
-<h2>Education</h2>
+<section id="contact">
 
-<div class="card">
-
-<p>
-Diploma in Computer Science
-</p>
-
-<p>
-Bachelor of Science in Computer Science (Current)
-</p>
-
-</div>
-
-</section>
-
-
-
-
-<section>
 
 <h2>Contact</h2>
 
+
 <div class="card">
+
 
 <p>
 GitHub:
 <a href="https://github.com/augustine-kapelabulungu">
-My GitHub Profile
+github.com/augustine-kapelabulungu
 </a>
 </p>
 
+
+<p>
+LinkedIn: Coming Soon
+</p>
+
+
 </div>
 
+
 </section>
+
 
 
 
@@ -155,10 +236,14 @@ My GitHub Profile
 <footer>
 
 <p>
-© 2026 Augustine Kapelabulungu | IT Professional
+© 2026 Augustine Kapelabulungu
 </p>
 
 </footer>
+
+
+
+<script src="script.js"></script>
 
 
 </body>
